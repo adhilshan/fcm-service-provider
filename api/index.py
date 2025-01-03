@@ -15,7 +15,7 @@ def get_firebase_app(service_account_json, project_id):
     firebase_apps[project_id] = app_instance
     return app_instance
 
-@app.route('/send-notification', methods=['POST'])
+@app.route('/api/send-notification', methods=['POST'])
 def send_notification():
     try:
         data = request.get_json()
