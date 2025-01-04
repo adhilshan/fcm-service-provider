@@ -26,19 +26,16 @@ This project provides an API for sending Firebase Cloud Messaging (FCM) notifica
 1. **Send to a Topic (Broadcast Notification)**:
 ```json
 {
-  "service_account": {
-    "type": "service_account",
-    "project_id": "your-project-id",
-    "private_key_id": "your-private-key-id",
-    "private_key": "-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----\n",
-    "client_email": "firebase-adminsdk@your-project-id.iam.gserviceaccount.com",
-    "client_id": "your-client-id",
-    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-    "token_uri": "https://oauth2.googleapis.com/token",
-    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk%40your-project-id.iam.gserviceaccount.com"
-  },
-  "project_id": "your-project-id",
+   "type": "service_account",
+   "project_id": "your-project-id",
+   "private_key_id": "your-private-key-id",
+   "private_key": "-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----\n",
+   "client_email": "firebase-adminsdk@your-project-id.iam.gserviceaccount.com",
+   "client_id": "your-client-id",
+   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+   "token_uri": "https://oauth2.googleapis.com/token",
+   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+   "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk%40your-project-id.iam.gserviceaccount.com"
   "topic": "all-users",
   "title": "Broadcast Title",
   "body": "This is a broadcast notification.",
@@ -52,18 +49,16 @@ This project provides an API for sending Firebase Cloud Messaging (FCM) notifica
 2. **Send to an Individual Token**:
 ```json
 {
-  "service_account": {
-    "type": "service_account",
-    "project_id": "your-project-id",
-    "private_key_id": "your-private-key-id",
-    "private_key": "-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----\n",
-    "client_email": "firebase-adminsdk@your-project-id.iam.gserviceaccount.com",
-    "client_id": "your-client-id",
-    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-    "token_uri": "https://oauth2.googleapis.com/token",
-    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk%40your-project-id.iam.gserviceaccount.com"
-  },
+   "type": "service_account",
+   "project_id": "your-project-id",
+   "private_key_id": "your-private-key-id",
+   "private_key": "-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----\n",
+   "client_email": "firebase-adminsdk@your-project-id.iam.gserviceaccount.com",
+   "client_id": "your-client-id",
+   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+   "token_uri": "https://oauth2.googleapis.com/token",
+   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+   "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk%40your-project-id.iam.gserviceaccount.com"
   "project_id": "your-project-id",
   "token": "device_token_here",
   "title": "Direct Title",
